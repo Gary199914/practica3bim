@@ -1,0 +1,31 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '59173310688@s.whatsapp.net',
+    fromMe: false,
+    id: '5966F965E4E054AB464914F347945A70',
+    participant: undefined
+  },
+  messageTimestamp: 1720562363,
+  pushName: 'J',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  from: '59173310688'
+}
+[ERROR ID (ans_d06210c6-02e3-4ad6-948c-46364a12dfb7)]:  TypeError: text.match is not a function
+    at extractUrlFromText (D:\ChatBot\base-baileys-mysql\node_modules\@whiskeysockets\baileys\lib\Utils\messages.js:41:67)
+    at generateLinkPreviewIfRequired (D:\ChatBot\base-baileys-mysql\node_modules\@whiskeysockets\baileys\lib\Utils\messages.js:45:48)
+    at generateWAMessageContent (D:\ChatBot\base-baileys-mysql\node_modules\@whiskeysockets\baileys\lib\Utils\messages.js:246:71)
+    at generateWAMessage (D:\ChatBot\base-baileys-mysql\node_modules\@whiskeysockets\baileys\lib\Utils\messages.js:507:102)
+    at Object.sendMessage (D:\ChatBot\base-baileys-mysql\node_modules\@whiskeysockets\baileys\lib\Socket\messages-send.js:614:69)
+    at BaileysProvider.sendText (D:\ChatBot\base-baileys-mysql\node_modules\@bot-whatsapp\provider\lib\baileys\index.cjs:645:28)
+    at BaileysProvider.sendMessage (D:\ChatBot\base-baileys-mysql\node_modules\@bot-whatsapp\provider\lib\baileys\index.cjs:736:21)
+    at CoreClass.sendProviderAndSave (D:\ChatBot\base-baileys-mysql\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:1561:46)
+    at Object.promiseInFunc (D:\ChatBot\base-baileys-mysql\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:1238:36)
+    at D:\ChatBot\base-baileys-mysql\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:531:38
