@@ -17,7 +17,7 @@ const MYSQL_DB_NAME = 'chat';
 const MYSQL_DB_PORT = '3306';
 
 /**
- * Función para guardar mensajes en la base de datos
+ * Función para guardar mensajes en la base de datos ejemplo
  */
 
 
